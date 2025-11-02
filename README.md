@@ -32,7 +32,7 @@ A small static web UI that visualizes a timeline of events from a JSON file, fea
 Each event looks like:
 ```json
 {
-  "date": "2023-04-15",     // ISO short format YYYY-MM-DD
+  "date": "2023-04-15",
   "title": "Event title",
   "location": "City/Place",
   "summary": "Short description of the event",
